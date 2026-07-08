@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo de Psicologia | MN Animat</title>
+  <meta name="description" content="Site-demo de serviço de psicologia com visual acolhedor e interativo." />
+  <link rel="stylesheet" href="/assets/shared.css" />
+</head>
+<body>
+
+<header class="topbar"><div class="topbar-inner"><a class="brand" href="../"><span>✦</span> Clínica Horizonte Calmo</a><div class="nav"><a href="#historia">História</a><a href="#explicacoes">Explicações</a><a href="#respirar">Respirar</a><a href="#agendar">Agendar</a><button class="audio-toggle" data-audio-toggle aria-pressed="false">♫ Ativar música ambiente</button></div></div></header>
+<div class="demo-alert">Aviso: são exemplos, não são sites reais.</div>
+<main class="page">
+  <section class="hero"><div class="container hero-grid"><div class="hero-copy reveal"><span class="kicker">Serviço de psicologia • acolhimento • ética</span><h1>Um site que transmite segurança antes mesmo da primeira conversa.</h1><p class="lead">Esta demo foi criada para serviços de psicologia que desejam explicar o processo, acolher o visitante e facilitar o pedido de agendamento com uma experiência elegante e humana.</p><div class="cta-row"><a class="btn primary" href="#agendar">Quero agendar</a><a class="btn ghost" href="#historia">Explorar a jornada</a></div><div class="badge-stack"><span>Explicações claras</span><span>Respiração guiada</span><span>Interação com o mouse</span></div></div><div class="hero-visual reveal" data-tilt><img src="/assets/psicologia-hero-3d.png" alt="Ambiente acolhedor de terapia moderna" /><div class="media-caption"><strong>Imagem demonstrativa gerada</strong><br><span class="muted">Visual pensado para transmitir acolhimento e confiança.</span></div></div></div></section>
+  <section class="container main-grid">
+    <div id="historia" class="section-card reveal"><div class="section-head"><div><span class="pill">Modo história</span><h2>Conduza o visitante por uma narrativa de cuidado.</h2><p>O conteúdo abaixo pode ser ajustado ao estilo de atendimento do profissional.</p></div></div><div class="story-tabs"><button class="active" data-story-step="0">Chegada</button><button data-story-step="1">Escuta</button><button data-story-step="2">Compreensão</button><button data-story-step="3">Caminho</button></div><div class="story-box" id="storyBox"><h3>Você chega com algo difícil de nomear.</h3><p>Talvez seja ansiedade, exaustão, conflitos, insegurança ou sensação de estar sobrecarregado. O site acolhe sem julgamento e convida para uma primeira conversa.</p></div></div>
+    <div id="explicacoes" class="two-col reveal"><div class="section-card"><div class="section-head"><div><span class="pill">Explicações</span><h2>O que este tipo de atendimento pode trabalhar?</h2></div></div><div data-accordion>
+      <div class="accordion-item open"><button class="accordion-head">Ansiedade e excesso de preocupação <span>＋</span></button><div class="accordion-panel">Ajuda a observar gatilhos, sinais do corpo, pensamentos automáticos e estratégias de enfrentamento mais saudáveis.</div></div>
+      <div class="accordion-item"><button class="accordion-head">Relacionamentos e limites <span>＋</span></button><div class="accordion-panel">Pode favorecer comunicação, autoestima, autonomia, vínculos e construção de limites de forma respeitosa.</div></div>
+      <div class="accordion-item"><button class="accordion-head">Autoconhecimento e tomada de decisão <span>＋</span></button><div class="accordion-panel">Ajuda a organizar ideias, reconhecer padrões, refletir sobre escolhas e fortalecer clareza pessoal.</div></div>
+    </div></div><div class="section-card"><div class="section-head"><div><span class="pill">Mensagens de acolhimento</span><h2>Como você chega hoje?</h2></div></div><div class="mood-grid"><button data-mood="ansioso">Ansioso(a)</button><button data-mood="cansado">Cansado(a)</button><button data-mood="confuso">Confuso(a)</button><button data-mood="esperançoso">Esperançoso(a)</button></div><div class="notice" id="moodResult">Clique em uma opção para receber uma mensagem breve.</div></div></div>
+    <div id="respirar" class="two-col reveal"><div class="section-card"><div class="section-head"><div><span class="pill">Mini experiência</span><h2>Respiração guiada para mostrar interatividade.</h2><p>Ferramenta demonstrativa. Não substitui atendimento profissional.</p></div></div><div class="btn-row"><button class="btn primary" id="breathBtn">Iniciar experiência</button></div><ul class="list-clean"><li>Inspirar por 4 segundos</li><li>Segurar por 4 segundos</li><li>Soltar por 6 segundos</li></ul></div><div class="section-card breath-box"><div class="breath-circle" id="breathCircle"><span id="breathText">Pausado</span></div></div></div>
+    <div id="agendar" class="split-highlight reveal"><div class="section-card"><div class="section-head"><div><span class="pill">Estratégia de venda</span><h2>Por que este modelo convence o cliente?</h2></div></div><div class="three-col"><div class="card"><h3>Confiança visual</h3><p>O ambiente realista transmite profissionalismo imediato.</p></div><div class="card"><h3>Didático e ético</h3><p>Explica sem prometer cura, fortalecendo credibilidade.</p></div><div class="card"><h3>CTA claro</h3><p>O visitante entende o próximo passo e entra em contato com facilidade.</p></div></div></div>
+    <div class="section-card"><div class="section-head"><div><span class="pill">Agendamento</span><h2>Transforme visita em pedido de contato.</h2></div></div><form id="contactFormPsych" class="form-stack"><div class="input-grid"><label>Nome<input required placeholder="Seu nome" /></label><label>WhatsApp<input required placeholder="(00) 00000-0000" /></label></div><label>Modalidade<select><option>Primeira conversa</option><option>Atendimento online</option><option>Atendimento presencial</option></select></label><label>Mensagem<textarea placeholder="Conte brevemente o que você procura"></textarea></label><button class="btn primary">Enviar pedido demonstrativo</button><small id="sentPsych" class="muted"></small></form></div></div>
+  </section>
+</main>
+<div class="float-cta"><a class="btn primary" href="../proposta-local/">Quero vender este modelo</a></div>
+<footer class="footer"><div class="container">Aviso: são exemplos, não são sites reais. Em situações de crise ou risco imediato, procure atendimento de emergência da sua região.</div></footer>
+<script src="/assets/shared.js"></script>
+<script>
+const storyData=[
+  ['Você chega com algo difícil de nomear.','Talvez seja ansiedade, exaustão, conflitos, insegurança ou sensação de estar sobrecarregado. O site acolhe sem julgamento e convida para uma primeira conversa.'],
+  ['A escuta cria espaço.','A apresentação mostra que existe um ambiente de escuta profissional, sigilo e respeito ao tempo de cada pessoa.'],
+  ['Compreender ajuda a organizar.','A pessoa começa a reconhecer padrões, emoções, gatilhos e possibilidades, com mais clareza e menos confusão.'],
+  ['Um caminho é construído.','A terapia não oferece soluções mágicas, mas um processo de cuidado, reflexão e construção gradual.']
+];
+document.querySelectorAll('[data-story-step]').forEach((btn,i)=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-story-step]').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelector('#storyBox').innerHTML=`<h3>${storyData[i][0]}</h3><p>${storyData[i][1]}</p>`;}));
+const moods={ansioso:'Respire devagar. Você não precisa resolver tudo agora; um passo de cada vez já é um começo.',cansado:'Cansaço também pede cuidado. Às vezes, parar para olhar para si já é um avanço importante.',confuso:'Nem sempre as respostas chegam de imediato. Organizar o que sente já ajuda a enxergar melhor.',esperançoso:'Que bom que a esperança está presente. Ela pode ser um ponto de apoio para dar o próximo passo.'};
+document.querySelectorAll('[data-mood]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-mood]').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelector('#moodResult').textContent=moods[btn.dataset.mood];}));
+let breathTimer=null, step=0; const phases=[['Inspire',4000,true],['Segure',4000,false],['Solte',6000,false]]; const circle=document.querySelector('#breathCircle'); const text=document.querySelector('#breathText');
+document.querySelector('#breathBtn').addEventListener('click',()=>{ if(breathTimer){clearInterval(breathTimer); breathTimer=null; text.textContent='Pausado'; circle.classList.remove('active'); return;} const run=()=>{ const [label,dur,expand]=phases[step%phases.length]; text.textContent=label; circle.classList.toggle('active', expand); const current=step; setTimeout(()=>{ if(!breathTimer || current!==step) return; step++; run(); },dur);}; breathTimer=true; step=0; run();});
+demoFormHandler(document.querySelector('#contactFormPsych'),'#sentPsych','Mensagem simulada enviada. Conecte este formulário ao WhatsApp, e-mail ou backend do cliente.');
+</script>
+
+</body>
+</html>
